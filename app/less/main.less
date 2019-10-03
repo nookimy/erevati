@@ -1,3 +1,40 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: red;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main-nav {
+	order: 3;
+	width: 100%;
+    flex-grow: 1;
+}
+
+.site-list {
+	.reset-list;
+	display: flex;
+	flex-wrap: wrap;	
 }
