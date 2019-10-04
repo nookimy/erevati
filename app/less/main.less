@@ -1,3 +1,4 @@
+/*Global*/
 html {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -13,8 +14,85 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: "open sans", sans-serif;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Mixins*/
+.visually-hidden() {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.button-reset() {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+/*Variables*/
+
+/*Основной шрифт*/
+@font: "Open Sans", "Arial", sans-serif;
+@font-size: 14px;
+@line-height: 24px;
+
+/*Переменные цветов*/
+@white: #ffffff;
+@black: #000000;
+@blue-darkest: #1d2631;
+@blue-dark: #283645;
+@grey-light: #f2f2f2;
+@grey: #e5e5e5;
+@grey-darker: #222;
+@pink: #ff2e63;
+@green: #2aab6d;
+@green-darker: #1c9b5e;
+
+/*Основные цвета*/
+@font-color: @blue-dark;
+@bg--body: @white;
+@link-color: @pink;
+@link-color--hover: @pink;
+
+/*Размеры экранов*/
+@phones-width: 320px;
+@phones-max-width: 659px;
+@tablets-width: 660px;
+@tablets-max-width: 959px;
+@desktops-width: 960px;
+
+/*retina*/
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+
+/*Style*/
 .reset-list() {
   margin: 0;
   padding: 0;
@@ -25,6 +103,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+  padding: 20px 0;
 }
 
 .main-nav {
@@ -36,5 +115,48 @@ body {
 .site-list {
 	.reset-list;
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+
+  &__item {
+    font-weight: 600;
+
+    & a {
+      color: @grey-darker;
+      text-decoration: none;
+
+      &:hover {
+        color: @pink;
+      }
+    }
+  }
+}
+
+.user {
+  &__login {
+    color: @grey-darker;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: top;
+    margin-right: 25px;
+
+    &:hover {
+      color: @pink;
+    }
+  }
+
+  &__reg {
+    color: @white;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: top;
+  }
+}
+
+.button {
+  color: #fff;
+  background-color: #ff2e63;
+  padding: 4px 20px;
+  border-radius: calc(40px/2);
 }
