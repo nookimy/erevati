@@ -16,6 +16,7 @@ body {
   padding: 0;
   font-size: 16px;
   line-height: 1.2;
+  color: #222;
   font-family: "open sans", sans-serif;
 }
 
@@ -90,6 +91,13 @@ img {
 
 /*Style*/
 
+.button {
+  color: #fff;
+  background-color: #ff2e63;  
+  border-radius: calc(40px/2);
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -103,7 +111,7 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-between;
   margin-top: 20px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .main-nav {
@@ -129,7 +137,6 @@ img {
 
     & a {
       color: @grey-darker;
-      text-decoration: none;
 
       &:hover {
         color: @pink;
@@ -171,11 +178,53 @@ img {
   }
 }
 
-.button {
-  color: #fff;
-  background-color: #ff2e63;  
-  border-radius: calc(40px/2);
+.intro {
+  padding-bottom: 60px;
+  text-align: center;
+
+  &__text {
+    padding: 0 32px;
+  }
+
+  &__title {    
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 32px 0;
+    padding: 0;
+  }
+
+  &__subtitle {
+    color: #494e5f;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 24px 0;
+  }
+
+  &__note {
+    margin: 12px 0 4px;
+    font-size: 21px;
+  }
+
+  &__raiting {
+    display: block;
+    height: 28px;
+    margin: 0 auto;
+    width: 152px;
+  }
+
+  &__more-button {
+    border-radius: 30px;
+    font-size: 24px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    margin-top: 60px;
+  }
 }
+
+
+
 
 @media (max-width: @phones-max-width) {
   .name-header {
