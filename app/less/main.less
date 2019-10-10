@@ -214,7 +214,7 @@ img {
   }
 
   &__collboard {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -325,6 +325,11 @@ img {
     &--red {
       background-color: #ffd5e0;
       color: #9c1c3c;
+    }
+
+    &--gray {
+      background-color: #dedadb;
+      color: @black;
     }
   }
 }
@@ -489,5 +494,11 @@ img {
     &__raiting {
       margin: 0;
     }
+  }
+}
+
+@media (min-width: 1490px) {
+  .callboard {
+    margin-top: -125px;
   }
 }
