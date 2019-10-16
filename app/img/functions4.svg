@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <path id="a" d="M16 32h24v44H16z"/>
+        <path id="b" d="M52 72V32c0-6.627-5.373-12-12-12v-4h40v56H52z"/>
+    </defs>
+    <g fill="none" fill-rule="nonzero">
+        <path fill="#EE801F" d="M32 12h-8V8a8 8 0 0 1 8-8h40a8 8 0 0 1 8 8v64a8 8 0 0 1-8 8H40.944A11.955 11.955 0 0 0 44 72v-8h28V8H32v4zm20 64a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+        <g transform="translate(-8 -8)">
+            <use fill="#EE801F" xlink:href="#a"/>
+            <use fill="#FFF" fill-opacity=".5" xlink:href="#a"/>
+        </g>
+        <g transform="translate(-8 -8)">
+            <use fill="#EE801F" xlink:href="#b"/>
+            <use fill="#FFF" fill-opacity=".5" xlink:href="#b"/>
+        </g>
+        <path fill="#EE801F" d="M8 16h24a8 8 0 0 1 8 8v48a8 8 0 0 1-8 8H8a8 8 0 0 1-8-8V24a8 8 0 0 1 8-8zm0 8v44h24V24H8zm4 48v4h16v-4H12z"/>
+    </g>
+</svg>
