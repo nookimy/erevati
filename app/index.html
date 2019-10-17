@@ -100,7 +100,7 @@
   </section>
   <section class="getstarted container">
       <h2 class="getstarted__title">Подписывайтесь на новые объявления и опережайте своих конкурентов</h2>
-      <a class="getstarted__button button">Начать работу<a> 
+      <a class="getstarted__button button">Начать работу</a> 
   </section>
 </body>
 <footer class="page-footer">
@@ -150,4 +150,26 @@
     </nav>
   </div>  
 </footer>
+<div class="popup popup-login">
+  <div class="popup-login__body">
+    <h2 class="popup-login__title">Вход</h2>
+    <form class="popup-login__form form" method="post" action="#">
+      <div class="form__field-text">
+        <label class="form__text-label" for="user-email">Логин</label>
+        <input class="form__text-input" id="user-email" type="text" name="email" placeholder="Введите email">
+      </div>
+      <div class="form__field-text">
+        <label class="form__text-label" for="user-password">Пароль</label>
+        <input class="form__text-input" id="user-password" type="password" name="password" placeholder="Введите пароль">
+      </div>
+      <div class="form__field-checkbox">
+        <input class="form__checkbox-input" type="checkbox" id="remember" name="remember" value="Запомнить меня">
+        <label class="form__checkbox-label" for="remember">Запомнить меня</label>
+      </div>
+      <div class="form__button">
+        <button class="form__login-button button" type="submit">Войти</button>
+      </div>
+    </form>
+  </div>
+</div>
 </html>
