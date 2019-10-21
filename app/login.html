@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
   <header class="page-header container">
+
     <a class="logo-header">
       <svg class="logo-header__svg"  width="40" height="30" fill="none" viewBox="0 0 411 316">
         <path fill="#38CD8B" d="M342.17 187.393c0 11.867-9.889 21.493-21.954 21.493H66.522c-12.065 0-21.954-9.692-21.954-21.493V21.583c0-11.868 9.89-21.494 21.954-21.494h253.694c12.065 0 21.954 9.692 21.954 21.493v165.811z"/>
@@ -25,82 +27,33 @@
         <li class="site-list__item"><a href="">О сервисе</a></li>        
       </ul>
     </nav>
+
     <section class="user">
-      <a class="user__login" href="/login.html">Вход</a>
+      <a class="user__login" href="">Вход</a>
       <a class="user__reg button" href="">Регистрация</a>
-    </section>        
+    </section>  
+
   </header>
-  <section class="intro">
-    <div class="intro__text">
-      <h1 class="intro__title">Сервис мгновенных уведомлений</h1>
-      <h2 class="intro__subtitle">Узнавайте о выходе новых объявлений по интересующим вас запросам</h2>
-      <div class="intro__collboard">
-        <img class="intro__img-avito" src="/img/avito.png">
-        <img class="intro__img-youla" src="/img/youla.png">
+
+  <section class="login container">
+    <h1 class="login__title">Вход в личный кабинет</h1>
+    <form class="login__form form" method="post" action="#">
+      <div class="form__field form__field-text">
+        <label class="form__text-label" for="user-email">Логин</label>
+        <input class="form__text-input" id="user-email" type="text" name="email" placeholder="Введите email">
       </div>
-      <p class="intro__note"><span>Лучший сервис</span> в России</p>
-      <img class="intro__raiting" src="/img/raiting.png" alt="">
-      <a class="intro__button button" href="#" title="Узнать больше">Узнать больше</a>
-    </div>
-    <div class="intro__image">
-      <img src="/img/screen.png" alt="">
-    </div>
-  </section>
-  <section class="callboard">
-    <div class="container">
-      <h2 class="callboard__title">Мы работаем с площадками</h2>
-      <ul class="callboard__list">
-        <li class="callboard__item">
-          <h3 class="callboard__name">Авито</h3>
-          <p class="callboard__text">Начало работы по формированию позиции влечет процесс внедрения новых предложений.</p>
-          <a class="callboard__button callboard__button--green button" href="#">Попробовать</a>
-        </li>
-        <li class="callboard__item">
-          <h3 class="callboard__name">Юла</h3>
-          <p class="callboard__text">Разнообразный  опыт реализация плановых заданий требуют анализа финансовых условий.</p>
-          <a class="callboard__button callboard__button--gray button">В разработке</a>
-        </li>
-      </ul>
-    </div>    
-  </section>
-  <section class="functions">
-    <div class="container">
-      <h2 class="functions__title">Возможности сервиса</h2>
-      <ul class="functions__list">
-        <li class="functions__item">
-          <figure class="functions__figure functions__figure--bg-green">
-            <img class="functions__image" src="/img/functions1.svg">
-          </figure>
-          <h3 class="functions__name">Уведомления в Telegram</h3>
-          <p class="functions__text">Получайте уведомления о выходе новых объявлений с сайтов avito.ru и youla.ru</p>
-        </li>
-        <li class="functions__item">
-          <figure class="functions__figure functions__figure--bg-pink">
-            <img class="functions__image" src="/img/functions2.svg">
-          </figure>          
-          <h3 class="functions__name">Гибкие фильтры</h3>
-          <p class="functions__text">Настрйте фильтры для запроса, чтобы получать только интересющие вас объявления</p>
-        </li>
-        <li class="functions__item">
-          <figure class="functions__figure functions__figure--bg-blue">
-            <img class="functions__image" src="/img/functions3.svg">
-          </figure>  
-          <h3 class="functions__name">Оповещения об обновлении объявлений</h3>
-          <p class="functions__text">Получайте оповещения об изменении недавно опубликованных объявлений</p>
-        </li>
-        <li class="functions__item">
-          <figure class="functions__figure functions__figure--bg-orange">
-            <img class="functions__image" src="/img/functions4.svg">
-          </figure>  
-          <h3 class="functions__name">Гибкая тарифная сетка</h3>
-          <p class="functions__text">Вы платите только за то, что вам действительно нужно.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="getstarted container">
-      <h2 class="getstarted__title">Подписывайтесь на новые объявления и опережайте своих конкурентов</h2>
-      <a class="getstarted__button button">Начать работу</a> 
+      <div class="form__field form__field-text">
+        <label class="form__text-label" for="user-password">Пароль</label>
+        <input class="form__text-input" id="user-password" type="password" name="password" placeholder="Введите пароль">
+      </div>
+      <div class="form__field form__field-checkbox">
+        <input class="form__checkbox-input" type="checkbox" id="remember" name="remember" value="Запомнить меня">
+        <label class="form__checkbox-label" for="remember">Запомнить меня</label>
+      </div>
+      <div class="form__button">
+        <button class="form__login-button button" type="submit">Войти</button>
+      </div>
+    </form>
   </section>
 </body>
 <footer class="page-footer">
