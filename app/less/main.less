@@ -513,6 +513,10 @@ img {
 }
 
 .form {
+  &__field {
+    margin-bottom: 25px;
+  }
+
   &__field-text {
     display: flex;
     flex-direction: column;
@@ -523,6 +527,90 @@ img {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 8px;
+  }
+
+  &__text-input {
+    height: 35px;
+    padding: 5px 8px;
+    border: 1px solid #aaa;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 1px solid #38cd8b;
+      box-shadow: inset 0 0 0 1px #38cd8b;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+
+  &__field-checkbox {
+    padding-left: 45px;
+    margin-bottom: 25px;
+  }
+
+  &__checkbox-input {
+    display: none;
+
+    &:disabled + label {
+      color: #000000;
+      opacity: 0.5;
+    }
+
+    & + label::before {
+      content: "";
+      position: absolute;
+      left: -45px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #aaa;
+    }
+
+    &:checked + label::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -43px;
+      width: 12px;
+      height: 12px;
+      background-image: url("../img/cross.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+
+  &__checkbox-label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+
+  }
+
+  &__login-button {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 8px 40px;
+    margin: 0;
+    color: #fff;
+    min-height: 40px;
+    background-color: #38cd8b;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      background-color: @pink;
+    }
+
   }
 }
 
@@ -635,6 +723,13 @@ img {
       font-size: 18px;
     }
   }
+
+  .login__form {
+    max-width: 450px;
+    width: 100%;
+    padding: 20px;
+    margin: 40px auto;
+  }
 }
 
 
@@ -728,6 +823,12 @@ img {
 
     &__title {
       font-size: 35px;
+    }
+  }
+
+  .login {
+    &__title {
+      margin-top: 25px;
     }
   }
 }
