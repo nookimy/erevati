@@ -1,0 +1,65 @@
+.radio {
+	& input[type="radio"] {
+    	.visually-hidden();
+    }
+
+    & label {
+    	position: relative;
+    	display: flex;
+    	align-items: center;
+    	cursor: pointer;
+
+    	&::before {    		
+    		display: inline-block;
+    		box-sizing: border-box;
+    		flex-shrink: 0;
+    		margin-right: 10px;
+    		content: "";
+		    display: inline-block;		    
+		    height: 16px;
+		    width: 16px;		    
+		    border: 1px solid;
+		    border-radius: 50%;
+    	}
+
+    	&::after {
+    		position: absolute;
+    		left: 4px;
+    		top: 5px;
+    		content: "";
+		    display: inline-block;
+		    height: 8px;
+		    width: 8px;
+		    border-radius: 50%;
+		    background-color: black;	    
+    	}
+    }
+
+	/*Прячем галку по умолчанию*/
+    & input[type="radio"] + label::after {
+	    content: none;
+	}
+
+	/*Показываем галку по состоянию checked*/
+	& input[type="radio"]:checked + label::after {
+	    content: "";
+	}
+
+	& input[type="radio"]:disabled + label {
+	    color: gray;
+	}
+
+	/*Добавляем фокус к внешнему блоку поддельного чекбокса*/
+	& input[type="radio"]:focus + label::before,	 {
+	    border: 1px red solid;
+	}
+
+	& input[type="radio"]:focus + label::after {
+		background-color: red;
+	}
+
+	& input[type="radio"]:focus + label {
+		color: red;
+	}
+
+}

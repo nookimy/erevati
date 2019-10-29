@@ -1,0 +1,58 @@
+.checkbox {
+	& input[type="checkbox"] {
+    	.visually-hidden();
+    }
+
+    & label {
+    	position: relative;
+    	display: flex;
+    	align-items: center;
+    	cursor: pointer;
+
+    	&::before {    		
+    		display: inline-block;
+    		box-sizing: border-box;
+    		flex-shrink: 0;
+    		margin-right: 10px;
+    		content: "";
+		    display: inline-block;		    
+		    height: 16px;
+		    width: 16px;		    
+		    border: 1px solid #aaa;
+		    border-radius: 5px;
+    	}
+
+    	&::after {
+    		position: absolute;
+    		left: 3px;
+    		top: 5px;
+    		content: "";
+		    display: inline-block;
+		    height: 6px;
+		    width: 10px;
+		    border-left: 2px solid;
+		    border-bottom: 2px solid;		    
+		    transform: rotate(-45deg);
+    	}
+    }
+
+	/*Прячем галку по умолчанию*/
+    & input[type="checkbox"] + label::after {
+	    content: none;
+	}
+
+	/*Показываем галку по состоянию checked*/
+	& input[type="checkbox"]:checked + label::after {
+	    content: "";
+	}
+
+	& input[type="checkbox"]:disabled + label {
+	    color: gray;
+	}
+
+	/*Добавляем фокус к внешнему блоку поддельного чекбокса*/
+	& input[type="checkbox"]:focus + label::before {
+	    border: 1px solid #38cd8b;
+		box-shadow: inset 0 0 0 1px #38cd8b;
+	}
+}
