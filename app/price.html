@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Подключаем CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header class="page-header container">
+    <a class="logo-header">
+      <svg class="logo-header__svg"  width="40" height="30" fill="none" viewBox="0 0 411 316">
+        <path fill="#38CD8B" d="M342.17 187.393c0 11.867-9.889 21.493-21.954 21.493H66.522c-12.065 0-21.954-9.692-21.954-21.493V21.583c0-11.868 9.89-21.494 21.954-21.494h253.694c12.065 0 21.954 9.692 21.954 21.493v165.811z"/>
+        <path fill="#FF2E63" d="M276.703 45.316H21.954C9.89 45.316 0 55.403 0 67.271v164.888c0 11.867 9.89 21.954 21.954 21.954h73.972l106.871 61.775v-61.775h73.972c12.065 0 21.954-10.087 21.954-21.954V67.271c-.066-11.802-9.955-21.955-22.02-21.955z"/>
+        <path fill="#38CD8B" d="M402.231 207.699l-28.679-23.273c-5.933-4.813-9.427-12.394-9.427-20.438V44.921c0-8.044 3.494-15.625 9.427-20.438L402.231 1.21C405.857-1.757 411 1.078 411 5.957v196.929c0 4.945-5.143 7.714-8.769 4.813z"/>
+        <path fill="#fff" d="M94.871 100.631l26.306 57.292 28.349-66.456 28.547 66.456 25.976-57.292h25.976L177.48 208.556l-28.02-64.676-28.217 64.61-52.48-107.925h26.108v.066z"/>
+      </svg>
+      <span class="name-header">Erevati</span>
+    </a>
+
+    <nav class="main-nav">
+      <ul class="main-nav site-list">
+        <li class="site-list__item"><a href="/price.html">Цены</a></li>
+        <li class="site-list__item"><a href="">Контакты</a></li>
+        <li class="site-list__item"><a href="">О сервисе</a></li>        
+      </ul>
+    </nav>
+    <section class="user">
+      <a class="user__login" href="/login.html">Вход</a>
+      <a class="user__reg btn" href="">Регистрация</a>
+    </section>        
+  </header>
+  <section class="price container">
+    <h1 class="price__title">Тарифы и цены</h1>
+    <p class="price__subtitle">Изучите предложенные тарифы и выберите тот, который подходит вам</p>
+    <ul class="price__list">
+      <li class="price__item tariff">
+        <h2 class="tariff__title tariff__title--green">Light</h2>
+        <p class="tariff__subtitle">1 поисковый запрос</p>
+        <p class="tariff__price"><span>200 руб.</span> в месяц</p>
+        <a class="tariff__btn  tariff__btn--free btn" href="#">Попробовать бесплатно *</a>
+        <ul class="tariff__about-list">
+          <li class="tariff__about-item">
+            <p class="tariff__about-text tariff__about-text--param">Количество URL</p>
+            <p class="tariff__about-text tariff__about-text--value">1</p>
+          </li>
+          <li class="tariff__about-item">
+            <p class="tariff__about-text tariff__about-text--param">Обновление каждые</p>
+            <p class="tariff__about-text tariff__about-text--value"">20 мин.</p>
+          </li>
+          <li class="tariff__about-item">
+            <p class="tariff__about-text tariff__about-text--param">Уведомления в Telegram</p>
+            <p class="tariff__about-text tariff__about-text--value"">Да</p>
+          </li>
+        </ul>
+        <span class="tariff__note">* Бесплатный период действует 6 часов с момента регистрации</span>
+      </li>
+      <li class="price__item tariff">
+        <h2 class="tariff__title tariff__title--green">Standart</h2>
+        <p class="tariff__subtitle">До трех поисковых запросов</p>
+        <p class="tariff__price"><span>400 руб.</span> в месяц</p>
+        <a class="tariff__btn  tariff__btn--paid btn" href="#">Перейти</a>
+        <ul class="tariff__about-list">
+          <li class="tariff__about-item">
+            <p class="tariff__about-text tariff__about-text--param">Количество URL</p>
+            <p class="tariff__about-text tariff__about-text--value">3</p>
+          </li>
+          <li class="tariff__about-item">
+            <p class="tariff__about-text tariff__about-text--param">Обновление каждые</p>
+            <p class="tariff__about-text tariff__about-text--value"">20 мин.</p>
+          </li>
+          <li class="tariff__about-item">
+            <p class="tariff__about-text tariff__about-text--param">Уведомления в Telegram</p>
+            <p class="tariff__about-text tariff__about-text--value"">Да</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</body>
+<footer class="page-footer">
+  <div class="page-footer__wrapper container">
+    <h2 class="page-footer__title">Навигация по сайту</h2>
+    <nav class="page-footer__navigation footer-navigation">
+      <h3 class="footer-navigation__title">Раздел</h3>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+      </ul>
+    </nav>
+    <nav class="page-footer__navigation footer-navigation">
+      <h3 class="footer-navigation__title">Раздел</h3>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+      </ul>
+    </nav>
+    <nav class="page-footer__navigation footer-navigation">
+      <h3 class="footer-navigation__title">Раздел</h3>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+      </ul>
+    </nav>
+    <nav class="page-footer__navigation footer-navigation">
+      <h3 class="footer-navigation__title">Раздел</h3>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+        <li class="footer-navigation__item"><a class="footer-navigation__link" href="">Ссылка</a></li>
+      </ul>
+    </nav>
+    <nav class="page-footer__navigation footer-navigation">
+      <h3 class="footer-navigation__title">Раздел</h3>
+      <ul class="footer-navigation__list">
+        <li class="footer-navigation__item"><a class="footer-navigation__link footer-navigation__link--button button" href="">Ссылка</a></li>
+      </ul>
+    </nav>
+  </div>  
+</footer>
+</html>
