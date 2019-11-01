@@ -1,0 +1,22 @@
+.main-nav {
+  display: flex;
+  order: 3;
+  width: 100%;
+  flex-grow: 1;
+}
+
+@media (min-width: @tablets-width) {
+	.main-nav {
+		width: auto;
+	    order: 2;
+	    justify-content: center;
+	}
+}
+
+@media (min-width: @desktops-width) {
+  .main-nav {
+    width: auto;
+    max-width: 550px;
+    margin-top: 0;
+  }
+}

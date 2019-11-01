@@ -43,7 +43,7 @@
 	.price {
 		&__list {
 			align-items: stretch;
-			justify-content: space-around;
+			justify-content: center;
 		}
 
 		&__item {
@@ -51,17 +51,6 @@
 			width: 300px;
 			flex-grow: 0;
 			margin-bottom: 0;
-		}
-	}
-}
-
-@media (min-width: @desktops-width) {
-	.price {
-		&__list {
-			justify-content: center;
-		}
-
-		&__item {
 			margin-right: 25px;
 
 			&:last-child {

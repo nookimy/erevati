@@ -1,0 +1,180 @@
+.intro {
+  padding-bottom: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    order: 1;
+    padding-right: 32px;
+  }
+
+  &__text {
+    order: 2;
+    padding: 0 16px;
+  }
+
+  &__title {    
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 32px 0;
+    padding: 0;
+  }
+
+  &__subtitle {
+    color: #494e5f;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 24px 0;
+    padding: 0;
+  }
+
+  &__collboard {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img-avito {
+    margin-bottom: 15px;
+    width: 160px;
+  }
+
+  &__img-youla {
+    width: 160px;
+  }
+
+  &__note {
+    margin: 12px 0 4px;
+    font-size: 21px;
+    padding: 0;
+    line-height: 1.6;
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  &__raiting {
+    display: block;
+    height: 28px;
+    margin: 0 auto;
+    width: 152px;
+  }
+
+  &__button {
+    display: inline-block;
+    color: @white;
+    background-color: @pink;
+    margin-top: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    padding: 8px 40px;
+  }
+}
+
+@media (min-width: 410px) {
+  .intro {
+    &__collboard {
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 35px;
+    }
+
+    &__img-avito {
+      margin-bottom: 0;
+      width: 160px;
+      margin-top: 13px;
+    }
+
+    &__img-youla {
+      width: 160px;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+@media (min-width: @tablets-width) {
+    .intro {
+    &__title {
+      font-size: 48px;
+      margin-bottom: 44px;
+      margin-top: 44px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+      line-height: 1.57;
+    }
+
+    &__collboard {
+      justify-content: center;
+    }
+
+    &__img-avito {
+      margin-bottom: 0;
+      width: 160px;
+      margin-top: 13px;
+      margin-right: 20px;
+    }
+
+    &__img-youla {
+      width: 160px;
+    }
+  }
+}
+
+@media (min-width: @desktops-width) {
+  .intro {
+    display: grid;
+    grid-column-gap: calc(80px/2);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "Hero-image Hero-text";
+    text-align: left;
+    padding-top: 0;
+    position: relative;
+
+    &__text {
+      grid-area: Hero-text;
+      max-width: calc(calc(1200px - 80px)/2);
+      padding: 0;
+    }
+
+    &__image {
+      display: block;
+      grid-area: Hero-image;
+      position: relative;
+      z-index: 1;
+      margin-top: 20px;
+      margin-top: 0;
+    }
+
+    &__title,
+    &__subtitle,
+    &__note {
+      padding-right: 16px;
+    }
+
+    &__collboard {
+      justify-content: space-around;
+      padding-right: 16px;
+    }
+
+    &__img-avito {
+      width: 200px;
+    }
+
+    &__img-youla {
+      width: 200px;
+    }
+
+    &__raiting {
+      margin: 0;
+    }
+  }
+}
