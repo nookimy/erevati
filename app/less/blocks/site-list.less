@@ -10,6 +10,7 @@
 
 
   &__item {
+    position: relative;
     font-weight: 600;
     font-size: 16px;
     margin-right: 15px; 
@@ -21,9 +22,29 @@
     & a {
       color: @grey-darker;
       text-decoration: none;
+      padding: 10px 5px;
 
       &:hover {
         color: @pink;
+      }
+    }
+
+    &--current {
+      & a {       
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 5px;
+          bottom: -10px;
+          left: 5px;
+          height: 2px;
+          background-color: #000000;
+        }
+
+        &:not([href]) {
+          color: #000000;
+        }
       }
     }
   }
